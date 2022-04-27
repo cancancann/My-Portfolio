@@ -1,0 +1,346 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-color: rgb(7, 7, 7);
+    color: white;
+}
+
+#navbar-container{
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    background-color: rgb(7, 7, 7);
+}
+
+#nav-left-center{
+ 
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 67%;
+}
+
+#logo-container{
+    width: 33%;
+    flex: 1 0 33%; /* flex-grow; flex-shrink; flex-basis */
+}
+
+#my-logo{
+    width: 70px;
+}
+
+#navbar{
+    width: 34%;
+    flex: 1 0 34%;
+}
+
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+}
+
+#navbar li{
+    list-style: none;
+    margin: 0 2.5vw;
+}
+
+.nav-link{
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+.nav-link:hover{
+    text-decoration: underline;
+    text-decoration-color:  rgb(231, 45, 45);
+}
+
+#socials{
+    width: 30%; 
+    display: flex;
+    margin-left: 12vw;
+    justify-content:flex-end;
+}
+
+#social-github{  /* Social links */
+    width: 30px;
+    height: 30px;
+}
+#social-facebook{  /* Social links */
+    width: 30px;
+    height: 30px;
+}
+
+
+#welcome-section{
+    width: 100%;
+    height: 100vh;
+}
+
+#welcome-container{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#welcome-headline{
+    font-family: 'Montaga', serif;
+    margin-left: 25vw;
+    width: 67vw;
+    font-size: 3em;
+}
+ 
+#welcome-sub-headline{
+    font-family: 'Montserrat', sans-serif;
+    border-left: solid;
+    border-color: rgb(231, 45, 45);
+    border-left-width: 3px;
+    padding-left: 1vw;
+    margin-left: 40vw;
+    width: 35vw;
+    font-size: 1.8em;
+    font-weight: 400;
+    text-align: left;
+}
+
+#projects{
+    width: 100%;
+}
+
+#projects-headline{
+    font-family: 'Montaga', serif;
+    font-size: 3.5em;
+    padding-bottom: 2vw;
+    margin-left: 10vw;
+    text-decoration: underline;
+    text-decoration-color:  rgb(231, 45, 45);
+}
+
+#projects-text{
+    font-family: 'Montserrat', sans-serif;
+    width: 60vw;
+    margin-left: 10vw;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    padding-bottom: 4vw;
+}
+
+#projects-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    justify-content: space-around;
+    
+}
+
+#project-one{
+    width: 400px;
+    padding-bottom: 5vw;
+}
+
+#project-two{
+    width: 400px;
+    padding-bottom: 5vw;
+}
+
+#project-three{
+    width: 400px;
+    padding-bottom: 5vw;
+}
+
+#project-four{
+    width: 400px;
+    padding-bottom: 5vw;
+}
+
+.project-image{
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+    margin-top: 3vw;
+    filter: grayscale(100%);
+}
+
+.project-image:hover{
+    filter: grayscale(0%);
+    transition: all .5s ease-in-out;
+    transform: scale(1.01);
+}
+
+.project-tile{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    padding-bottom: 0.5vw;
+    font-size: 1.5em;
+    text-align: left;
+}
+
+#tags{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    padding-top: 0.3vw;
+}
+
+.project-language{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    width: 70px;
+    height: 30px;
+    padding: 7px;
+    color: black;
+    font-size: 0.7em;
+    text-align: center;
+    background-color: rgb(231, 45, 45);
+    border-radius: 50px;
+}
+
+#contact-container{
+    width: 100%;
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+    display: flex;
+}
+
+#contact-headline h2{
+    font-family: 'Montaga', serif;
+    font-size: 3.5em;
+    padding-bottom: 2vw;
+    margin-left: 10vw;
+    text-decoration: underline;
+    text-decoration-color:  rgb(231, 45, 45);
+}
+
+#form-container{
+    width: 100%;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+#name{
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+}
+
+#submit{
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+    border: none;
+    background-color: rgb(231, 45, 45);
+}
+
+#message{
+    font-family: 'Montserrat', sans-serif;
+    min-height: 10vw;
+    padding: 10px;
+    height: 150px;
+    resize: none;
+}
+
+.form-content{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2vw;
+}
+
+@media screen and (max-width: 820px){
+    #navbar-container{
+        display: flex;
+        flex-direction: column;
+    }
+    #nav-left-center{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+    }
+    #navbar{
+        width: 100%;
+        flex: none;
+        padding-bottom: 4vw;
+    }
+    
+    #navbar ul{
+        display: flex;
+        flex-direction: column;
+        padding-inline-start: 0;
+    }
+    .nav-link{
+        font-size: 1.3em;
+        line-height: 1.6em;
+    }
+    #logo-container{
+        width: 100%;
+        flex: none;
+        padding-bottom: 4vw;
+    }
+    #my-logo{
+        width: 300px;
+    }
+    #socials{
+        width: 100%; 
+        margin-left: 0;
+        justify-content:center;
+    }
+    #welcome-section{
+        padding-top: 40vw;
+    }
+
+    #welcome-headline{
+        margin-left: 17vw;
+    }
+     
+    #welcome-sub-headline{
+        padding-left: 2vw;
+        margin-left: 35vw;
+    }
+    #contact-container{
+        flex-direction: column;
+    }
+    #contact-headline h2{
+        padding-top: 6vw;
+        padding-bottom: 6vw;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        text-align: center;
+    }
+    
+    #projects-text{
+        padding-bottom: 10vw;
+    }
+
+    #project-one{
+        padding-bottom: 10vw;
+    }
+    
+    #project-two{
+        padding-bottom: 10vw;
+    }
+    
+    #project-three{
+        padding-bottom: 10vw;
+    }
+    
+    #project-four{
+        padding-bottom: 10vw;
+    }
+    .form-content{
+        padding-bottom: 6vw;
+    }
+}
