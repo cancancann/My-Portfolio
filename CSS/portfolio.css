@@ -9,20 +9,20 @@ body{
     color: white;
 }
 
-#navbar-container{
+.navbar-container{
     z-index: 2;
     position: fixed;
     top: 0;
     display: flex;
     width: 100%;
     height: auto;
-    padding: 30px;
-    padding-left: 10vw;
-    padding-right: 10vw;
-    background-color: rgb(7, 7, 7);
+    padding: 10px;
+    padding-left: 8vw;
+    padding-right: 8vw;
+    background-color: black;
 }
 
-#nav-left-center{
+.nav-left-center{
  
     display: flex;
     flex-wrap: nowrap;
@@ -30,26 +30,26 @@ body{
     width: 67%;
 }
 
-#logo-container{
+.logo-container{
     width: 33%;
     flex: 1 0 33%; /* flex-grow; flex-shrink; flex-basis */
 }
 
-#my-logo{
+.my-logo{
     width: 70px;
 }
 
-#navbar{
+.navbar{
     width: 34%;
     flex: 1 0 34%;
 }
 
-#navbar ul{
+.navbar ul{
     display: flex;
     flex-direction: row;
 }
 
-#navbar li{
+.navbar li{
     list-style: none;
     margin: 0 2.5vw;
 }
@@ -67,43 +67,58 @@ body{
     text-decoration-color:  rgb(231, 45, 45);
 }
 
-#socials{
+.socials{
     width: 30%; 
     display: flex;
-    margin-left: 12vw;
+    margin-left: 10vw;
     justify-content:flex-end;
 }
 
-#social-github{  /* Social links */
+.social-github{  /* Social links */
     width: 30px;
     height: 30px;
+    margin-inline-start: 50vmin;
+    margin-right: auto;
 }
-#social-facebook{  /* Social links */
+.social-facebook{  /* Social links */
     width: 30px;
     height: 30px;
+    margin-inline-start: -40vmin;
+}
+.social-linkedin{  /* Social links */
+    width: 30px;
+    height: 30px;
+    margin-right:6vmin;
+}
+.social-twitter{
+    width:30px;
+    height: 30px;
+    margin-inline-end: -80vmin;
+
 }
 
 
-#welcome-section{
+
+.welcome-section{
     width: 100%;
     height: 100vh;
 }
 
-#welcome-container{
+.welcome-container{
     position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-#welcome-headline{
+.welcome-headline{
     font-family: 'Montaga', serif;
     margin-left: 25vw;
     width: 67vw;
     font-size: 3em;
 }
  
-#welcome-sub-headline{
+.welcome-sub-headline{
     font-family: 'Montserrat', sans-serif;
     border-left: solid;
     border-color: rgb(231, 45, 45);
@@ -115,12 +130,16 @@ body{
     font-weight: 400;
     text-align: left;
 }
+.welcome-sub-foto{
+    text-align: right;
 
-#projects{
+}
+
+.projects{
     width: 100%;
 }
 
-#projects-headline{
+.projects-headline{
     font-family: 'Montaga', serif;
     font-size: 3.5em;
     padding-bottom: 2vw;
@@ -129,7 +148,7 @@ body{
     text-decoration-color:  rgb(231, 45, 45);
 }
 
-#projects-text{
+.projects-text{
     font-family: 'Montserrat', sans-serif;
     width: 60vw;
     margin-left: 10vw;
@@ -138,7 +157,7 @@ body{
     padding-bottom: 4vw;
 }
 
-#projects-container{
+.projects-container{
     display: flex;
     flex-wrap: wrap;
     padding-left: 10vw;
@@ -147,22 +166,22 @@ body{
     
 }
 
-#project-one{
+.project-one{
     width: 400px;
     padding-bottom: 5vw;
 }
 
-#project-two{
+.project-two{
     width: 400px;
     padding-bottom: 5vw;
 }
 
-#project-three{
+.project-three{
     width: 400px;
     padding-bottom: 5vw;
 }
 
-#project-four{
+.project-four{
     width: 400px;
     padding-bottom: 5vw;
 }
@@ -189,7 +208,7 @@ body{
     text-align: left;
 }
 
-#tags{
+.tags{
     display: flex;
     flex-direction: row;
     gap: 5px;
@@ -209,14 +228,14 @@ body{
     border-radius: 50px;
 }
 
-#contact-container{
+.contact-container{
     width: 100%;
     padding-top: 10vw;
     padding-bottom: 10vw;
     display: flex;
 }
 
-#contact-headline h2{
+.contact-headline h2{
     font-family: 'Montaga', serif;
     font-size: 3.5em;
     padding-bottom: 2vw;
@@ -225,25 +244,25 @@ body{
     text-decoration-color:  rgb(231, 45, 45);
 }
 
-#form-container{
+.form-container{
     width: 100%;
     padding-left: 10vw;
     padding-right: 10vw;
 }
 
-#name{
+.name{
     font-family: 'Montserrat', sans-serif;
     padding: 10px;
 }
 
-#submit{
+.submit{
     font-family: 'Montserrat', sans-serif;
     padding: 10px;
     border: none;
     background-color: rgb(231, 45, 45);
 }
 
-#message{
+.message{
     font-family: 'Montserrat', sans-serif;
     min-height: 10vw;
     padding: 10px;
@@ -259,24 +278,24 @@ body{
 }
 
 @media screen and (max-width: 820px){
-    #navbar-container{
+    .navbar-container{
         display: flex;
         flex-direction: column;
     }
-    #nav-left-center{
+    .nav-left-center{
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         width: 100%;
         text-align: center;
     }
-    #navbar{
+    .navbar{
         width: 100%;
         flex: none;
         padding-bottom: 4vw;
     }
     
-    #navbar ul{
+    .navbar ul{
         display: flex;
         flex-direction: column;
         padding-inline-start: 0;
@@ -285,35 +304,35 @@ body{
         font-size: 1.3em;
         line-height: 1.6em;
     }
-    #logo-container{
+    .logo-container{
         width: 100%;
         flex: none;
-        padding-bottom: 4vw;
+        padding-bottom: 4vw; 
     }
-    #my-logo{
+    .my-logo{
         width: 300px;
     }
-    #socials{
+    .socials{
         width: 100%; 
         margin-left: 0;
         justify-content:center;
     }
-    #welcome-section{
+    .welcome-section{
         padding-top: 40vw;
     }
 
-    #welcome-headline{
+    .welcome-headline{
         margin-left: 17vw;
     }
      
-    #welcome-sub-headline{
+    .welcome-sub-headline{
         padding-left: 2vw;
         margin-left: 35vw;
     }
-    #contact-container{
+    .contact-container{
         flex-direction: column;
     }
-    #contact-headline h2{
+    .contact-headline h2{
         padding-top: 6vw;
         padding-bottom: 6vw;
         margin-left: 10vw;
@@ -321,23 +340,23 @@ body{
         text-align: center;
     }
     
-    #projects-text{
+    .projects-text{
         padding-bottom: 10vw;
     }
 
-    #project-one{
+    .project-one{
         padding-bottom: 10vw;
     }
     
-    #project-two{
+    .project-two{
         padding-bottom: 10vw;
     }
     
-    #project-three{
+    .project-three{
         padding-bottom: 10vw;
     }
     
-    #project-four{
+    .project-four{
         padding-bottom: 10vw;
     }
     .form-content{
